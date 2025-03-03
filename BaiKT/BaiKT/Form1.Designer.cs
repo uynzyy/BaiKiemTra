@@ -30,8 +30,9 @@
 		{
 			lblUsername = new Label();
 			txtUserName = new TextBox();
-			label1 = new Label();
-			txtmatkhau = new TextBox();
+			lblPassword = new Label();
+			txtPassword = new TextBox();
+			btnLogin = new Button();
 			SuspendLayout();
 			// 
 			// lblUsername
@@ -50,29 +51,39 @@
 			txtUserName.Size = new Size(251, 27);
 			txtUserName.TabIndex = 1;
 			// 
-			// label1
+			// lblPassword
 			// 
-			label1.AutoSize = true;
-			label1.Location = new Point(104, 193);
-			label1.Name = "label1";
-			label1.Size = new Size(70, 20);
-			label1.TabIndex = 2;
-			label1.Text = "mật khẩu";
+			lblPassword.AutoSize = true;
+			lblPassword.Location = new Point(104, 193);
+			lblPassword.Name = "lblPassword";
+			lblPassword.Size = new Size(70, 20);
+			lblPassword.TabIndex = 2;
+			lblPassword.Text = "Password";
 			// 
-			// txtmatkhau
+			// txtPassword
 			// 
-			txtmatkhau.Location = new Point(224, 186);
-			txtmatkhau.Name = "txtmatkhau";
-			txtmatkhau.Size = new Size(251, 27);
-			txtmatkhau.TabIndex = 3;
+			txtPassword.Location = new Point(224, 186);
+			txtPassword.Name = "txtPassword";
+			txtPassword.Size = new Size(251, 27);
+			txtPassword.TabIndex = 3;
+			// 
+			// btnLogin
+			// 
+			btnLogin.Location = new Point(278, 254);
+			btnLogin.Name = "btnLogin";
+			btnLogin.Size = new Size(148, 59);
+			btnLogin.TabIndex = 4;
+			btnLogin.Text = "Login";
+			btnLogin.UseVisualStyleBackColor = true;
 			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(800, 450);
-			Controls.Add(txtmatkhau);
-			Controls.Add(label1);
+			Controls.Add(btnLogin);
+			Controls.Add(txtPassword);
+			Controls.Add(lblPassword);
 			Controls.Add(txtUserName);
 			Controls.Add(lblUsername);
 			Name = "Form1";
@@ -85,7 +96,8 @@
 
 		private Label lblUsername;
 		private TextBox txtUserName;
-		private Label label1;
-		private TextBox txtmatkhau;
+		private Label lblPassword;
+		private TextBox txtPassword;
+		private Button btnLogin;
 	}
 }
