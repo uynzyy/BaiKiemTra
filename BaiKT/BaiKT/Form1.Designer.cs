@@ -40,7 +40,7 @@
 			lblUsername.AutoSize = true;
 			lblUsername.Location = new Point(102, 141);
 			lblUsername.Name = "lblUsername";
-			lblUsername.Size = new Size(75, 20);
+			lblUsername.Size = new Size(105, 20);
 			lblUsername.TabIndex = 0;
 			lblUsername.Text = "Username";
 			lblUsername.Click += lblusername_Click;
@@ -75,7 +75,7 @@
 			btnLogin.Name = "btnLogin";
 			btnLogin.Size = new Size(148, 59);
 			btnLogin.TabIndex = 4;
-			btnLogin.Text = "Login";
+			btnLogin.Text = "Đăng nhập";
 			btnLogin.UseVisualStyleBackColor = true;
 			// 
 			// Form1
