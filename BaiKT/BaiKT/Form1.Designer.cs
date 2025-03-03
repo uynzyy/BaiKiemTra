@@ -29,9 +29,9 @@
 		private void InitializeComponent()
 		{
 			lblUsername = new Label();
-			txtUserName = new TextBox();
+			textboxusername = new TextBox();
 			lblPassword = new Label();
-			txtPassword = new TextBox();
+			textboxmatkhau = new TextBox();
 			btnLogin = new Button();
 			SuspendLayout();
 			// 
@@ -43,13 +43,15 @@
 			lblUsername.Size = new Size(75, 20);
 			lblUsername.TabIndex = 0;
 			lblUsername.Text = "Username";
+			lblUsername.Click += lblusername_Click;
 			// 
-			// txtUserName
+			// textboxusername
 			// 
-			txtUserName.Location = new Point(224, 138);
-			txtUserName.Name = "txtUserName";
-			txtUserName.Size = new Size(251, 27);
-			txtUserName.TabIndex = 1;
+			textboxusername.Location = new Point(224, 138);
+			textboxusername.Name = "textboxusername";
+			textboxusername.Size = new Size(251, 27);
+			textboxusername.TabIndex = 1;
+			textboxusername.TextChanged += textboxusername_TextChanged;
 			// 
 			// lblPassword
 			// 
@@ -60,12 +62,12 @@
 			lblPassword.TabIndex = 2;
 			lblPassword.Text = "Password";
 			// 
-			// txtPassword
+			// textboxmatkhau
 			// 
-			txtPassword.Location = new Point(224, 186);
-			txtPassword.Name = "txtPassword";
-			txtPassword.Size = new Size(251, 27);
-			txtPassword.TabIndex = 3;
+			textboxmatkhau.Location = new Point(224, 186);
+			textboxmatkhau.Name = "textboxmatkhau";
+			textboxmatkhau.Size = new Size(251, 27);
+			textboxmatkhau.TabIndex = 3;
 			// 
 			// btnLogin
 			// 
@@ -82,9 +84,9 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(800, 450);
 			Controls.Add(btnLogin);
-			Controls.Add(txtPassword);
+			Controls.Add(textboxmatkhau);
 			Controls.Add(lblPassword);
-			Controls.Add(txtUserName);
+			Controls.Add(textboxusername);
 			Controls.Add(lblUsername);
 			Name = "Form1";
 			Text = "Form1";
@@ -95,9 +97,9 @@
 		#endregion
 
 		private Label lblUsername;
-		private TextBox txtUserName;
+		private TextBox textboxusername;
 		private Label lblPassword;
-		private TextBox txtPassword;
+		private TextBox textboxmatkhau;
 		private Button btnLogin;
 	}
 }
