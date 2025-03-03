@@ -73,7 +73,7 @@
 			btnLogin.Name = "btnLogin";
 			btnLogin.Size = new Size(148, 59);
 			btnLogin.TabIndex = 4;
-			btnLogin.Text = "Login";
+			btnLogin.Text = "Đăng nhập";
 			btnLogin.UseVisualStyleBackColor = true;
 			// 
 			// Form1
